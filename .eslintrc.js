@@ -163,7 +163,7 @@ module.exports = {
       },
     },
     {
-      files: ['*.test.*', '*.spec.*', '*.js'],
+      files: ['*.test.*', '*.spec.*', '*.js', 'App.tsx'],
       rules: {
         'import/no-unused-modules': 'off',
       },
