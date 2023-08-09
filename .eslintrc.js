@@ -97,7 +97,7 @@ module.exports = {
           },
           {
             selector: 'property',
-            format: ['UPPER_CASE', 'camelCase', 'snake_case'],
+            format: ['UPPER_CASE', 'camelCase', 'snake_case', 'PascalCase'],
           },
           {
             selector: 'variable',
