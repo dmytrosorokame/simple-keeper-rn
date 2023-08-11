@@ -28,6 +28,7 @@ export const getStyles = ({ isPressed, isDisabled, isOutlined }: IProps): IStyle
 
     label: {
       color: isDisabled ? '#000' : labelColor,
+      fontWeight: '600',
     },
   });
 };
