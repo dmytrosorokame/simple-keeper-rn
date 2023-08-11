@@ -1,8 +1,9 @@
 import React from 'react';
-import { View } from 'react-native';
+
+import ScreenLoader from '../../components/shared/ScreenLoader/ScreenLoader';
 
 interface IExpensesScreen {}
 
-const ExpensesScreen: React.FC<IExpensesScreen> = () => <View></View>;
+const ExpensesScreen: React.FC<IExpensesScreen> = () => <ScreenLoader />;
 
 export default ExpensesScreen;
