@@ -5,7 +5,6 @@ import { View } from 'react-native';
 
 import WithHeading from '../../components/generic/WithHeading';
 import Button from '../../components/shared/Button';
-import Input from '../../components/shared/Input';
 import { TRootStackParamList } from '../../types/navigation';
 
 import { styles } from './styles';
@@ -26,7 +25,7 @@ const HomeScreen: React.FC<IHomeScreen> = () => {
   const handleLogout = (): void => {};
 
   return (
-    <WithHeading style={{ width: '100%', paddingHorizontal: 20 }}>
+    <WithHeading>
       <View style={styles.buttonContainer}>
         <Button onPress={handleNavigateToExpenses}>expenses</Button>
       </View>
@@ -36,8 +35,6 @@ const HomeScreen: React.FC<IHomeScreen> = () => {
       </View>
 
       <Button onPress={handleLogout}>logout</Button>
-
-      <Input />
     </WithHeading>
   );
 };
