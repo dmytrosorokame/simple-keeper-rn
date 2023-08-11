@@ -5,6 +5,7 @@ import { View } from 'react-native';
 
 import WithHeading from '../../components/generic/WithHeading';
 import Button from '../../components/shared/Button';
+import Input from '../../components/shared/Input';
 import { TRootStackParamList } from '../../types/navigation';
 
 import { styles } from './styles';
@@ -35,6 +36,8 @@ const HomeScreen: React.FC<IHomeScreen> = () => {
       </View>
 
       <Button onPress={handleLogout}>logout</Button>
+
+      <Input />
     </WithHeading>
   );
 };
