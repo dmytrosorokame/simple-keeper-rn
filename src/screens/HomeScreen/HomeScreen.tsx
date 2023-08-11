@@ -1,8 +1,14 @@
 import React from 'react';
-import { View } from 'react-native';
+import { Text, View } from 'react-native';
 
 interface IHomeScreen {}
 
-const HomeScreen: React.FC<IHomeScreen> = () => <View></View>;
+const HomeScreen: React.FC<IHomeScreen> = () => {
+  return (
+    <View>
+      <Text>Home screen</Text>
+    </View>
+  );
+};
 
 export default HomeScreen;

@@ -14,21 +14,28 @@ import ResetPasswordScreen from '../../../screens/ResetPasswordScreen';
 import SignUpScreen from '../../../screens/SignUpScreen';
 import { TRootStackParamList } from '../../../types/navigation';
 
+import { styles } from './styles';
+
 const RootStack = createNativeStackNavigator<TRootStackParamList>();
+
+const DEFAULT_SCREEN_OPTIONS = {
+  headerShown: false,
+  contentStyle: styles.content,
+};
 
 const AppNavigation: React.FC = () => (
   <NavigationContainer>
     <RootStack.Navigator>
-      <RootStack.Screen name="Home" component={HomeScreen} />
-      <RootStack.Screen name="Login" component={LoginScreen} />
-      <RootStack.Screen name="SignUp" component={SignUpScreen} />
-      <RootStack.Screen name="ResetPassword" component={ResetPasswordScreen} />
-      <RootStack.Screen name="Expenses" component={ExpensesScreen} />
-      <RootStack.Screen name="ExpenseDetails" component={ExpenseDetailsScreen} />
-      <RootStack.Screen name="ExpensesAnalytics" component={ExpensesAnalyticsScreen} />
-      <RootStack.Screen name="AddExpense" component={AddExpenseScreen} />
-      <RootStack.Screen name="Categories" component={CategoriesScreen} />
-      <RootStack.Screen name="AddCategory" component={AddCategoryScreen} />
+      <RootStack.Screen name="Home" component={HomeScreen} options={DEFAULT_SCREEN_OPTIONS} />
+      <RootStack.Screen name="Login" component={LoginScreen} options={DEFAULT_SCREEN_OPTIONS} />
+      <RootStack.Screen name="SignUp" component={SignUpScreen} options={DEFAULT_SCREEN_OPTIONS} />
+      <RootStack.Screen name="ResetPassword" component={ResetPasswordScreen} options={DEFAULT_SCREEN_OPTIONS} />
+      <RootStack.Screen name="Expenses" component={ExpensesScreen} options={DEFAULT_SCREEN_OPTIONS} />
+      <RootStack.Screen name="ExpenseDetails" component={ExpenseDetailsScreen} options={DEFAULT_SCREEN_OPTIONS} />
+      <RootStack.Screen name="ExpensesAnalytics" component={ExpensesAnalyticsScreen} options={DEFAULT_SCREEN_OPTIONS} />
+      <RootStack.Screen name="AddExpense" component={AddExpenseScreen} options={DEFAULT_SCREEN_OPTIONS} />
+      <RootStack.Screen name="Categories" component={CategoriesScreen} options={DEFAULT_SCREEN_OPTIONS} />
+      <RootStack.Screen name="AddCategory" component={AddCategoryScreen} options={DEFAULT_SCREEN_OPTIONS} />
     </RootStack.Navigator>
   </NavigationContainer>
 );
