@@ -1,16 +1,15 @@
 import React from 'react';
-import { Text, View } from 'react-native';
 
+import WithHeading from '../../components/generic/WithHeading';
 import Button from '../../components/shared/Button';
 
 interface IHomeScreen {}
 
 const HomeScreen: React.FC<IHomeScreen> = () => {
   return (
-    <View style={{ width: '100%', paddingHorizontal: 20 }}>
-      <Text>Home screen</Text>
+    <WithHeading style={{ width: '100%', paddingHorizontal: 20 }}>
       <Button>Click me</Button>
-    </View>
+    </WithHeading>
   );
 };
 
