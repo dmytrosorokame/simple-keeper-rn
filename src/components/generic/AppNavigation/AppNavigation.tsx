@@ -33,8 +33,8 @@ const AppNavigation: React.FC = () => (
       <RootStack.Screen name="Expenses" component={ExpensesScreen} options={DEFAULT_SCREEN_OPTIONS} />
       <RootStack.Screen name="ExpenseDetails" component={ExpenseDetailsScreen} options={DEFAULT_SCREEN_OPTIONS} />
       <RootStack.Screen name="ExpensesAnalytics" component={ExpensesAnalyticsScreen} options={DEFAULT_SCREEN_OPTIONS} />
-      <RootStack.Screen name="AddExpense" component={AddExpenseScreen} options={DEFAULT_SCREEN_OPTIONS} />
       <RootStack.Screen name="Categories" component={CategoriesScreen} options={DEFAULT_SCREEN_OPTIONS} />
+      <RootStack.Screen name="AddExpense" component={AddExpenseScreen} options={DEFAULT_SCREEN_OPTIONS} />
       <RootStack.Screen name="AddCategory" component={AddCategoryScreen} options={DEFAULT_SCREEN_OPTIONS} />
     </RootStack.Navigator>
   </NavigationContainer>
