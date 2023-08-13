@@ -5,6 +5,7 @@ import { View } from 'react-native';
 
 import WithHeading from '../../components/generic/WithHeading';
 import Button from '../../components/shared/Button';
+import { Screens } from '../../constants/screens.constants';
 import { TRootStackParamList } from '../../types/navigation';
 
 import { styles } from './styles';
@@ -15,11 +16,11 @@ const HomeScreen: React.FC<IHomeScreen> = () => {
   const navigation = useNavigation<NativeStackNavigationProp<TRootStackParamList, 'Home'>>();
 
   const handleNavigateToExpenses = (): void => {
-    navigation.navigate('Expenses');
+    navigation.navigate(Screens.EXPENSES);
   };
 
   const handleNavigateToCategories = (): void => {
-    navigation.navigate('Categories');
+    navigation.navigate(Screens.CATEGORIES);
   };
 
   const handleLogout = (): void => {};
