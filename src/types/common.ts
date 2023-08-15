@@ -6,6 +6,11 @@ export interface IIconProps {
   height?: number;
 }
 
+export interface ISelectOption {
+  value: string | number | null;
+  label: string;
+}
+
 export interface IButtonProps extends PressableProps {
   isOutlined?: boolean;
 }
