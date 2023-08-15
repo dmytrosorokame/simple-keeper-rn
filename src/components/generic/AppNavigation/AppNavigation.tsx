@@ -27,9 +27,9 @@ const DEFAULT_SCREEN_OPTIONS = {
 const AppNavigation: React.FC = () => (
   <NavigationContainer>
     <RootStack.Navigator>
+      <RootStack.Screen name={Screens.SIGN_UP} component={SignUpScreen} options={DEFAULT_SCREEN_OPTIONS} />
       <RootStack.Screen name={Screens.HOME} component={HomeScreen} options={DEFAULT_SCREEN_OPTIONS} />
       <RootStack.Screen name={Screens.LOGIN} component={LoginScreen} options={DEFAULT_SCREEN_OPTIONS} />
-      <RootStack.Screen name={Screens.SIGN_UP} component={SignUpScreen} options={DEFAULT_SCREEN_OPTIONS} />
       <RootStack.Screen
         name={Screens.RESET_PASSWORD}
         component={ResetPasswordScreen}
