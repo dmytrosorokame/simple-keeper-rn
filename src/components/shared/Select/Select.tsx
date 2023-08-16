@@ -1,8 +1,10 @@
-import React, { useCallback, useRef, useState } from 'react';
+import React, { useCallback, useState } from 'react';
 import { Pressable, Text, View } from 'react-native';
 
 import { ISelectOption } from '../../../types/common';
 import Arrow from '../../icons/Arrow';
+
+import { styles } from './styles';
 
 interface ISelectProps {
   options: ISelectOption[];
@@ -12,8 +14,6 @@ interface ISelectProps {
 
 const Select: React.FC<ISelectProps> = ({ options, onChange, selectedOption }) => {
   const [isOpen, setIsOpen] = useState(false);
-
-  const ref = useRef<View>(null);
 
   const handleToggle = useCallback((): void => {
     setIsOpen((prevState) => !prevState);
@@ -29,17 +29,19 @@ const Select: React.FC<ISelectProps> = ({ options, onChange, selectedOption }) =
   );
 
   return (
-    <View ref={ref}>
-      <Pressable onPress={handleToggle}>
+    <View>
+      <Pressable onPress={handleToggle} style={styles.selectContainer}>
         <Text>{selectedOption?.label || 'Select'}</Text>
 
-        <Arrow />
+        <View style={isOpen && styles.arrowDown}>
+          <Arrow />
+        </View>
       </Pressable>
 
       {isOpen && (
-        <View>
+        <View style={styles.optionsContainer}>
           {options.map((option) => (
-            <Pressable key={option.value} onPress={(): void => handleChange(option)}>
+            <Pressable style={styles.option} key={option.value} onPress={(): void => handleChange(option)}>
               <Text>{option.label}</Text>
             </Pressable>
           ))}
