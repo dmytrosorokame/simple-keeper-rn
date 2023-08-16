@@ -12,9 +12,7 @@ import { TRootStackParamList } from '../../types/navigation';
 
 import { styles } from './styles';
 
-interface ILoginScreen {}
-
-const LoginScreen: React.FC<ILoginScreen> = () => {
+const LoginScreen: React.FC = () => {
   const navigation = useNavigation<NativeStackNavigationProp<TRootStackParamList>>();
 
   const handleSubmit = useCallback(async ({ values, reset }: ISubmitAuthFormParams) => {

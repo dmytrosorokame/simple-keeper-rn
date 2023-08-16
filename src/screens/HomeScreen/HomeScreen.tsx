@@ -10,9 +10,7 @@ import { TRootStackParamList } from '../../types/navigation';
 
 import { styles } from './styles';
 
-interface IHomeScreen {}
-
-const HomeScreen: React.FC<IHomeScreen> = () => {
+const HomeScreen: React.FC = () => {
   const navigation = useNavigation<NativeStackNavigationProp<TRootStackParamList, 'Home'>>();
 
   const handleNavigateToExpenses = (): void => {
