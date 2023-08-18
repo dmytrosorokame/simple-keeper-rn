@@ -1,7 +1,7 @@
 import React from 'react';
+import { Path, Svg } from 'react-native-svg';
 
 import { IIconProps } from '../../../types/common';
-import { Path, Svg } from 'react-native-svg';
 
 const Line: React.FC<IIconProps> = ({ style, width, height }) => (
   <Svg style={style} width={width} height={height}>
