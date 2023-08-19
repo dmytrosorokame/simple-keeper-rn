@@ -1,79 +1,114 @@
-This is a new [**React Native**](https://reactnative.dev) project, bootstrapped using [`@react-native-community/cli`](https://github.com/react-native-community/cli).
+# SimpleKeeper Readme
 
-# Getting Started
+SimpleKeeper is a mobile application project that aims to provide a simple and efficient way to manage and track various tasks and reminders. This document serves as a quick guide to get you started with the project.
 
->**Note**: Make sure you have completed the [React Native - Environment Setup](https://reactnative.dev/docs/environment-setup) instructions till "Creating a new application" step, before proceeding.
+## Installation
 
-## Step 1: Start the Metro Server
+Before you begin, please ensure you have the following prerequisites installed:
 
-First, you will need to start **Metro**, the JavaScript _bundler_ that ships _with_ React Native.
+- Node.js (v16 or later)
+- npm (Node Package Manager)
+- Git
 
-To start Metro, run the following command from the _root_ of your React Native project:
+Follow these steps to set up and run the SimpleKeeper project:
 
-```bash
-# using npm
-npm start
+1. Clone the repository:
 
-# OR using Yarn
-yarn start
-```
+   ```bash
+   git clone <repository_url>
+   ```
 
-## Step 2: Start your Application
+2. Navigate to the project directory:
 
-Let Metro Bundler run in its _own_ terminal. Open a _new_ terminal from the _root_ of your React Native project. Run the following command to start your _Android_ or _iOS_ app:
+   ```bash
+   cd SimpleKeeper
+   ```
 
-### For Android
+3. Install dependencies:
 
-```bash
-# using npm
-npm run android
+   ```bash
+   npm install
+   ```
 
-# OR using Yarn
-yarn android
-```
+## Usage
 
-### For iOS
+The project provides several scripts to help you with development and testing. You can run these scripts using the following commands:
 
-```bash
-# using npm
-npm run ios
+- To start the Metro bundler (required for running the app):
 
-# OR using Yarn
-yarn ios
-```
+  ```bash
+  npm start
+  ```
 
-If everything is set up _correctly_, you should see your new app running in your _Android Emulator_ or _iOS Simulator_ shortly provided you have set up your emulator/simulator correctly.
+- To run the app on Android (ensure an Android emulator or device is connected):
 
-This is one way to run your app — you can also run it directly from within Android Studio and Xcode respectively.
+  ```bash
+  npm run android
+  ```
 
-## Step 3: Modifying your App
+- To run the app on iOS (requires Xcode and macOS):
 
-Now that you have successfully run the app, let's modify it.
+  ```bash
+  npm run ios
+  ```
 
-1. Open `App.tsx` in your text editor of choice and edit some lines.
-2. For **Android**: Press the <kbd>R</kbd> key twice or select **"Reload"** from the **Developer Menu** (<kbd>Ctrl</kbd> + <kbd>M</kbd> (on Window and Linux) or <kbd>Cmd ⌘</kbd> + <kbd>M</kbd> (on macOS)) to see your changes!
+- To run linting using ESLint:
 
-   For **iOS**: Hit <kbd>Cmd ⌘</kbd> + <kbd>R</kbd> in your iOS Simulator to reload the app and see your changes!
+  ```bash
+  npm run lint
+  ```
 
-## Congratulations! :tada:
+- To fix linting issues automatically:
 
-You've successfully run and modified your React Native App. :partying_face:
+  ```bash
+  npm run lint:fix
+  ```
 
-### Now what?
+- To run tests using Jest:
 
-- If you want to add this new React Native code to an existing application, check out the [Integration guide](https://reactnative.dev/docs/integration-with-existing-apps).
-- If you're curious to learn more about React Native, check out the [Introduction to React Native](https://reactnative.dev/docs/getting-started).
+  ```bash
+  npm test
+  ```
 
-# Troubleshooting
+## Dependencies
 
-If you can't get this to work, see the [Troubleshooting](https://reactnative.dev/docs/troubleshooting) page.
+SimpleKeeper uses a variety of dependencies to power its functionality. Some of the key dependencies include:
 
-# Learn More
+- **@react-native-async-storage/async-storage**: Asynchronous storage management for React Native.
+- **@react-navigation/native**: Core navigation library for React Native apps.
+- **@react-navigation/native-stack**: Stack navigation for React Native apps.
+- **@reduxjs/toolkit**: Redux state management toolkit for efficient state handling.
+- **axios**: Promise-based HTTP client for making API requests.
+- **formik**: Form library for React.
+- **luxon**: Library for working with dates and times in JavaScript.
+- **react**: Core React library.
+- **react-native**: Core React Native library.
+- **react-native-safe-area-context**: Provides safe area insets for React Native apps.
+- **react-native-screens**: Native navigation library for screens in React Native.
+- **react-native-svg**: SVG library for React Native.
+- **react-redux**: Official React bindings for Redux.
+- **redux-persist**: Persist and rehydrate a Redux store.
+- **toastify-react-native**: Library for displaying toasts in React Native apps.
+- **yup**: Schema validation library.
 
-To learn more about React Native, take a look at the following resources:
+For a complete list of dependencies, including development dependencies, please refer to the `package.json` file.
 
-- [React Native Website](https://reactnative.dev) - learn more about React Native.
-- [Getting Started](https://reactnative.dev/docs/environment-setup) - an **overview** of React Native and how setup your environment.
-- [Learn the Basics](https://reactnative.dev/docs/getting-started) - a **guided tour** of the React Native **basics**.
-- [Blog](https://reactnative.dev/blog) - read the latest official React Native **Blog** posts.
-- [`@facebook/react-native`](https://github.com/facebook/react-native) - the Open Source; GitHub **repository** for React Native.
+## Contributing
+
+We welcome contributions to SimpleKeeper! If you would like to contribute, please follow these steps:
+
+1. Fork the repository on GitHub.
+2. Create a new branch from the `main` branch for your work.
+3. Make your changes and commit them.
+4. Push your branch to your fork.
+5. Submit a pull request to the `main` branch of the main repository.
+
+## License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+---
+
+For additional questions or support, please contact [your email address here].
+
+Enjoy using SimpleKeeper to manage your tasks and reminders efficiently!
